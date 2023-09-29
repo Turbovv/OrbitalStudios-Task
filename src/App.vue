@@ -3,9 +3,17 @@
 
 <template>
   <div>
-    first commit
+   <p>first commit</p>
   </div>
 </template>
 
 <style scoped>
-</style>
+/* .test {
+  background-image: url('./assets/ezgif-4-51260a819b.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height:1080px;
+} */
+</style>le>
