@@ -17,9 +17,10 @@
 
 <style scoped>
 .about-part {
-    padding: 0 19%;
     position: relative;
     bottom: 300px;
+    display:grid;
+    justify-content: center;
 }
 
 .about-part-inner {

@@ -60,7 +60,6 @@
   cursor: pointer;
 }
 .banner-text {
-    border:1px solid red;
     margin-top:300px;
   }
   .banner-text-center {
@@ -87,7 +86,7 @@
 
 .button {
   display: inline-block;
-    padding: 23px 60px;
+    padding: 23px 0;
     background-color: #d6ad86;
     font-size: 14px;
     font-weight: 400;
@@ -95,6 +94,7 @@
     text-transform: capitalize;
     line-height: 14px;
     border:none;
+    width:250px;
 }
 
 
