@@ -1,11 +1,13 @@
 <script lang="ts">
 import Header from './components/Header.vue'
 import About from './components/About.vue'
+import MenuItems from './components/MenuItems.vue'
 
 export default {
     components: {
         Header,
-        About
+        About,
+        MenuItems
     }
 }
 </script>
@@ -14,11 +16,6 @@ export default {
 <div>
     <Header />
     <About />
-    <h1>aaaa</h1>
+    <MenuItems />
 </div>
 </template>
-<style scoped>
-h1 {
-  color:black;
-}
-</style>
