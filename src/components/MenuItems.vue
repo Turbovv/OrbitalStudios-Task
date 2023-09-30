@@ -71,6 +71,8 @@ export default {
 .food-menu-inner {
     /* border: 1px solid red; */
     margin: 0 auto;
+    position: relative;
+    bottom:150px;
 }
 
 .food-menu-inner .food-menu-inner-text {
@@ -92,14 +94,13 @@ export default {
     display: grid;
     justify-content: center;
     position: relative;
-    top:50px;
+    margin-top:50px;
 
 }
 .flex-wrap {
     display:grid;
     gap:100px;
     grid-template-columns: auto auto;
-    border:1px solid red;
 }
 .center {
     justify-content: center;
