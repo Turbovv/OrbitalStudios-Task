@@ -2,12 +2,14 @@
 import Header from './components/Header.vue'
 import About from './components/About.vue'
 import MenuItems from './components/MenuItems.vue'
+import IntroVideo from './components/IntroVideo.vue'
 
 export default {
     components: {
         Header,
         About,
-        MenuItems
+        MenuItems,
+        IntroVideo
     }
 }
 </script>
@@ -17,5 +19,6 @@ export default {
     <Header />
     <About />
     <MenuItems />
+    <IntroVideo />
 </div>
 </template>
