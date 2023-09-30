@@ -13,9 +13,11 @@
     </div>
 </div>
 <div class="banner-text">
+  <div class="banner-text-center">
     <p class="banner-text-inner">Expensive But The Best</p>
     <h1 class="color-w text">Modern restaurant in<br>center of the city</h1>
     <button class="button">Book A Table</button>
+  </div>
 </div>
 </div>
 </template>
@@ -36,7 +38,8 @@
   align-items: center;
   color: white; 
   height: 80px;
-  margin-right: 25%;
+  position: relative;
+  right:230px;
 }
 .header {
   display: flex;
@@ -58,8 +61,13 @@
 }
 .banner-text {
     border:1px solid red;
-    padding:0 19%;
     margin-top:300px;
+  }
+  .banner-text-center {
+    justify-content: center;
+    display:grid;
+    position: relative;
+    right:300px;
   }
   .banner-text-inner {
   color:white;
@@ -88,6 +96,7 @@
     line-height: 14px;
     border:none;
 }
+
 
 @media (max-width: 768px) {
   .menu {
