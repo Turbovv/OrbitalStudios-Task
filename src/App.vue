@@ -5,6 +5,7 @@ import MenuItems from './components/MenuItems.vue'
 import IntroVideo from './components/IntroVideo.vue'
 import Review from './components/Review.vue'
 import Carousel from './components/Carousel.vue'
+import Contact from './components/Contact.vue'
 
 export default {
     components: {
@@ -13,7 +14,8 @@ export default {
         MenuItems,
         IntroVideo,
         Review,
-        Carousel
+        Carousel,
+        Contact
     }
 }
 </script>
@@ -28,6 +30,7 @@ export default {
   <div class="carou">
     <Carousel />
   </div>
+  <Contact />
 </div>
 </template>
 
