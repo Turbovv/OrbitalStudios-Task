@@ -6,6 +6,7 @@ import IntroVideo from './components/IntroVideo.vue'
 import Review from './components/Review.vue'
 import Carousel from './components/Carousel.vue'
 import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 
 export default {
     components: {
@@ -15,7 +16,8 @@ export default {
         IntroVideo,
         Review,
         Carousel,
-        Contact
+        Contact,
+        Footer
     }
 }
 </script>
@@ -27,18 +29,19 @@ export default {
     <MenuItems />
     <IntroVideo />
     <Review />
-  <div class="carou">
-    <Carousel />
-  </div>
-  <Contact />
+    <div class="carou">
+        <Carousel />
+    </div>
+    <Contact />
+    <Footer />
 </div>
 </template>
 
 <style scoped>
 .carou {
-    border:1px solid red;
+    border: 1px solid red;
     justify-content: center;
-    max-width:80%;
+    max-width: 80%;
     margin: 0 auto;
 }
 </style>
