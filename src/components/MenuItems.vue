@@ -6,14 +6,14 @@
         <div class="food-menu-center">
             <div class="flex-wrap">
                 <div v-for="item in items" :key="item.id" class="single-food-item">
-                <div> <img :src="item.image" alt=""></div>
-                <div class="single-food-desc">
-                    <h3>{{ item.title }}</h3>
-                    <p>They're wherein heaven seed hath nothing</p>
-                    <h5>Form $40.00</h5>
-                </div>
+                    <div> <img class="single-food-img" :src="item.image" alt=""></div>
+                    <div class="single-food-desc">
+                        <h3>{{ item.title }}</h3>
+                        <p>They're wherein heaven seed hath nothing</p>
+                        <h5>Form $40.00</h5>
+                    </div>
 
-            </div>
+                </div>
             </div>
         </div>
     </div>
@@ -68,13 +68,6 @@ export default {
 </script>
 
 <style scoped>
-.food-menu-inner {
-    /* border: 1px solid red; */
-    margin: 0 auto;
-    position: relative;
-    bottom:150px;
-}
-
 .food-menu-inner .food-menu-inner-text {
     color: #d6ad86;
     font-weight: 400;
@@ -93,15 +86,16 @@ export default {
 .food-menu-center {
     display: grid;
     justify-content: center;
-    position: relative;
-    margin-top:50px;
+    margin-top: 50px;
 
 }
+
 .flex-wrap {
-    display:grid;
-    gap:100px;
+    display: grid;
     grid-template-columns: auto auto;
+
 }
+
 .center {
     justify-content: center;
     display: grid;
@@ -110,7 +104,6 @@ export default {
 .single-food-item {
     display: flex;
     border: 1px solid #f3e6da;
-
 }
 
 .single-food-desc {
@@ -137,5 +130,68 @@ export default {
     color: #000;
     margin-top: 20px;
     font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width:1200px) {
+    .single-food-item {
+        margin-bottom: 50px;
+        margin-right: 50px;
+    }
+
+    .food-menu {
+        bottom: 150px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .food-menu-center {
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .single-food-item {
+        width: 440px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .single-food-item {
+        display: grid;
+        width: 90%;
+    }
+
+    .single-food-desc {
+        margin: 0 auto;
+        display: grid;
+    }
+
+    .single-food-img {
+        border-radius: 50%;
+        margin: 0 auto;
+        display: grid;
+        margin-top: 20px;
+    }
+
+}
+
+@media only screen and (max-width:670px) {
+    .flex-wrap {
+        grid-template-columns: auto;
+        border: 1px solid red;
+        justify-content: center;
+    }
+
+    .single-food-item {
+        margin-right: 150px;
+    }
+
+    .single-food-img img {
+        width: 100%;
+    }
 }
 </style>

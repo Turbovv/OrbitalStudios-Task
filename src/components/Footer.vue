@@ -31,30 +31,24 @@
 </div>
 </template>
 
-<!-- 
-<script>
-export default {
-
-}
-</script> -->
-
 <style scoped>
 .footer-area {
     background-color: #1c1a18;
     padding: 100px 0px 25px;
     height: 500px;
-    min-width: 100%;
+
 }
 
 .footer-area-inner {
     margin: 0 auto;
-    gap: 20%;
-    left:50px;
+    right: 10px;
     position: relative;
     color: white;
     display: grid;
     grid-template-columns: auto auto auto;
-    width:1200px;
+    width: 1100px;
+    justify-content: space-between;
+
 }
 
 .footer-area-inner p {
@@ -72,6 +66,7 @@ export default {
     display: flex;
     gap: 50px;
 }
+
 a {
     line-height: 30px;
     color: #a9a9a9;
@@ -81,22 +76,58 @@ a {
     cursor: pointer;
     font-family: "Montserrat", sans-serif;
 }
+
 a:hover {
     color: #d6ad86;
 }
+
 .area-text {
     margin-bottom: 30px;
 }
+
 input {
     padding: 10px 25px;
     outline: none;
     border: none;
 }
+
 h4 {
     color: #a9a9a9;
     font-size: 15px;
     line-height: 25px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+}
+
+@media only screen and (max-width:1200px) {
+    .footer-area-inner {
+        width: 850px;
+    }
+}
+
+@media only screen and (max-width:990px) {
+    .footer-area-inner {
+        width: 680px;
+        transform: translateX(5px)
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .footer-area-inner {
+        grid-template-columns: auto auto;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .footer-area-inner {
+        grid-template-columns: auto;
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .footer-area {
+        height: auto;
+    }
 }
 </style>

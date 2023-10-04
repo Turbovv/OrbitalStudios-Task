@@ -1,18 +1,18 @@
 <template>
-    <div class="intro-video">
-        f
-    </div>
+<div class="intro-video">
+    f
+</div>
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+
+}
 </script>
 
 <style scoped>
 .intro-video {
-    background-image: url('../assets/introvideo.png');    
+    background-image: url('../assets/introvideo.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
